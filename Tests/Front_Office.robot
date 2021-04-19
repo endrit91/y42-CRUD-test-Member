@@ -19,7 +19,7 @@ Testing of the stripe integration
     FrontOfficeApp.Go to Landing Page
     FrontOfficeApp.Begin Login
     Sleep  20s
-    ${Integration_name}=    FrontOfficeApp.Set Variable    Hubspot
+    ${Integration_name}=    Set Variable    Hubspot
     log    ${Integration_name}
     FrontOfficeApp.Enter to the integration
     FrontOfficeApp.Get generic table data
@@ -32,7 +32,7 @@ Testing of the stripe integration
     FrontOfficeApp.Go to Landing Page
     FrontOfficeApp.Begin Login
     Sleep  20s
-    ${Integration_name}=    FrontOfficeApp.Set Variable    Stripe Inte
+    ${Integration_name}=    Set Variable    Stripe Inte
     log    ${Integration_name}
     FrontOfficeApp.Enter to the integration
     FrontOfficeApp.Get generic table data

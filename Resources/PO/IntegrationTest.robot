@@ -18,7 +18,7 @@ Verify Page Loaded
     wait until page contains   ${Integration_NAVIGATION_ELEMENT}
     Sleep  5s
 Select integration
-log    ${Integration_name}
+    log    ${Integration_name}
 
     #Input Text  id=searchInput  Hubspot
     #Mouse Over    //*[contains(text(), "Hubspot")]
