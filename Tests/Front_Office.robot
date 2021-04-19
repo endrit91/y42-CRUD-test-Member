@@ -10,7 +10,7 @@ Test Teardown  End Web Test
 *** Variables ***
 ${BROWSER} =  chrome
 ${URL} =  https://app.datos-d.com/organization/all-integrations-test/integrations/list
-${Integration_name}=    Hubspot
+
 
 *** Test Cases ***
 Testing of the stripe integration
@@ -19,7 +19,8 @@ Testing of the stripe integration
     FrontOfficeApp.Go to Landing Page
     FrontOfficeApp.Begin Login
     Sleep  20s
-    FrontOfficeApp.Enter to the integration    ${Integration_name}
+    ${Integration_name}=    Set Variable    Hubspot
+    FrontOfficeApp.Enter to the integration
     FrontOfficeApp.Get generic table data
     FrontOfficeApp.Loop inside logs button
     Sleep  5s
