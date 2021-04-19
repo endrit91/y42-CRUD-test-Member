@@ -20,9 +20,9 @@ Verify Page Loaded
 Select integration
     [arguments]    ${Integration_name}
 
-    #Input Text  id=searchInput  Hubspot
-    #Mouse Over    //*[contains(text(), "Hubspot")]
-    #sleep  10s
+    Input Text  id=searchInput  Hubspot
+    Mouse Over    //*[contains(text(), "${Integration_name}")]
+    sleep  10s
 
     click element  //*[contains(text(), "${Integration_name}")]
     Sleep  15s
