@@ -10,6 +10,7 @@ Test Teardown  End Web Test
 *** Variables ***
 ${BROWSER} =  chrome
 ${URL} =  https://app.datos-d.com/organization/all-integrations-test/integrations/list
+${Integration_name}=    Hubspot
 
 *** Test Cases ***
 Testing of the stripe integration
@@ -18,15 +19,19 @@ Testing of the stripe integration
     FrontOfficeApp.Go to Landing Page
     FrontOfficeApp.Begin Login
     Sleep  20s
-    FrontOfficeApp.Enter to the integration
+    FrontOfficeApp.Enter to the integration    ${Integration_name}
     FrontOfficeApp.Get generic table data
     FrontOfficeApp.Loop inside logs button
-    #FrontOfficeApp.Condition logic
     Sleep  5s
 
-#"Team" page should match requirements
- #   [Documentation]  This is test 2
-  #  [Tags]  test2
-   # FrontOfficeApp.Go to Landing Page
-    #FrontOfficeApp.Go to "Team" Page
-    #FrontOfficeApp.Validate "Team" Page
+Testing of the stripe integration
+    [Documentation]  This is test 2
+    [Tags]  test1
+    FrontOfficeApp.Go to Landing Page
+    FrontOfficeApp.Begin Login
+    Sleep  20s
+    ${Integration_name}=    Set Variable    Stripe Inte
+    FrontOfficeApp.Enter to the integration    ${Integration_name}
+    FrontOfficeApp.Get generic table data
+    FrontOfficeApp.Loop inside logs button
+    Sleep  5s
