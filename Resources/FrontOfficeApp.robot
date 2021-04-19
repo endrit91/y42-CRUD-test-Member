@@ -15,7 +15,7 @@ Begin Login
     Login.Enter Log In data
 
 Enter to the integration
-    [arguments]    ${Integration_name}
+log    ${Integration_name}
     IntegrationTest.Verify Page Loaded
     IntegrationTest.Select integration
     #IntegrationTest.Get number of tables per integration
