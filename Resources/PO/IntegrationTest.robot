@@ -26,7 +26,7 @@ Select integration
     Mouse Over    //*[contains(text(), "Hubspot")]
     sleep  10s
 
-    click element  //*[contains(text(), "Hubspot")]
+    click element  //*[contains(text(), "${name_integration}")]
     Sleep  15s
 
     #${Count}=    Get Element Count  //div[contains(text(), "INVALID")]
