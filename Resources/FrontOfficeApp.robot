@@ -4,7 +4,7 @@ Resource  ./PO/IntegrationTest.robot
 Resource  ./PO/Login.robot
 
 *** Variables ***
-${import_status}=    set variable  ready
+#${import_status}=    set variable  ready
 
 *** Keywords ***
 Go to Landing Page
@@ -15,6 +15,7 @@ Begin Login
     Login.Enter Log In data
 
 Enter to the integration
+    [arguments]    ${Integration_name}
     IntegrationTest.Verify Page Loaded
     IntegrationTest.Select integration
     #IntegrationTest.Get number of tables per integration

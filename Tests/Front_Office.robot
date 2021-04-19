@@ -32,7 +32,7 @@ Testing of the stripe integration
     FrontOfficeApp.Begin Login
     Sleep  20s
     ${Integration_name}=    Set Variable    Stripe Inte
-    FrontOfficeApp.Enter to the integration    ${Integration_name}
+    FrontOfficeApp.Enter to the integration
     FrontOfficeApp.Get generic table data
     FrontOfficeApp.Loop inside logs button
     Sleep  5s
