@@ -38,7 +38,6 @@ Testing of the G. Ads Test integration
     Sleep  5s
 
 Testing of the Stripe Test integration
-    Testing of the Stripe Test integration
     [Documentation]  This is test 3
     [Tags]  test3
     ${Integration_name}=    Set Variable    Stripe Inte
@@ -51,7 +50,6 @@ Testing of the Stripe Test integration
     Sleep  5s
 
 Testing of the BrainTree Test integration
-    Testing of the BrainTree Test integration
     [Documentation]  This is test 4
     [Tags]  test4
     ${Integration_name}=    Set Variable    BrainTree
