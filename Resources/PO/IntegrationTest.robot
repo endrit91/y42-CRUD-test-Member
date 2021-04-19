@@ -8,7 +8,7 @@ ${log_button_locator}=  //button[contains(@class,'mat-focus-indicator mat-toolti
 ${close_logs_button}=  //button[contains(@class,'mat-focus-indicator position-absolute bg-white z-depth-1 mat-icon-button mat-button-base')]
 ${table_title_locator}=    //div[contains(@class, "table-title")]
 ${table_import_id_locator}=     //td[contains(@class, "mat-tooltip-trigger text-right w-50 cursor-pointer")]
-${import_mode_locator}=    //div[contains(@class, "w-100 text-right ng-star-inserted")]
+#${import_mode_locator}=    //div[contains(@class, "w-100 text-right ng-star-inserted")]
 ${import_status_locator}=     //div[contains(@class, "mat-tooltip-trigger badge-state")]
 ${message_rows}=  //div[contains(@class, "ag-cell ag-cell-not-inline-editing ag-cell-auto-height cell-wrap-text color-grey-666666 ag-cell-value")]
 #${message_rows}=  //div[contains(@class, "ag-cell ag-cell-not-inline-editing ag-cell-auto-height cell-wrap-text color-grey-666666 ag-cell-value")]
@@ -22,11 +22,11 @@ Verify Page Loaded
 Select integration
 
 
-    Input Text  id=searchInput  ${name_integration}
-    #Mouse Over    //*[contains(text(), "${name_integration}")]
-    #sleep  10s
+    Input Text  id=searchInput  Hubspot
+    Mouse Over    //*[contains(text(), "Hubspot")]
+    sleep  10s
 
-    click element  //*[contains(text(), "${name_integration}")]
+    click element  //*[contains(text(), "Hubspot")]
     Sleep  15s
 
     #${Count}=    Get Element Count  //div[contains(text(), "INVALID")]
@@ -43,10 +43,10 @@ Enter each logs button
         #$text=    Get text    ${element}
         Log    ${log_button}
         click element    ${log_button}
-        sleep    10s
+        sleep    20s
         ${table_title}=   Get text    ${table_title_locator}
         ${table_import_id}=    Get text    ${table_import_id_locator}
-        ${import_mode}=   Get text    ${import_mode_locator}
+        #${import_mode}=   Get text    ${import_mode_locator}
         ${last_message}=    Get Element Count  ${message_rows}
         ${message_rows_list}=    Get WebElements    ${message_rows}
         ${import_status}=   Get text    ${import_status_locator}
