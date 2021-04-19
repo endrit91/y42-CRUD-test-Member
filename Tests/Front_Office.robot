@@ -37,6 +37,7 @@ Testing of the G. Ads Test integration
     FrontOfficeApp.Loop inside logs button
     Sleep  5s
 
+Testing of the Stripe Test integration
     Testing of the Stripe Test integration
     [Documentation]  This is test 3
     [Tags]  test3
@@ -49,6 +50,7 @@ Testing of the G. Ads Test integration
     FrontOfficeApp.Loop inside logs button
     Sleep  5s
 
+Testing of the BrainTree Test integration
     Testing of the BrainTree Test integration
     [Documentation]  This is test 4
     [Tags]  test4
