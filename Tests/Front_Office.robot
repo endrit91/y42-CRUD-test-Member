@@ -16,7 +16,7 @@ ${URL} =  https://app.datos-d.com/organization/all-integrations-test/integration
 Testing of the Snapchat integration
     [Documentation]  This is test 1
     [Tags]  test1
-    ${Integration_name}=    Set Variable    Snapchat
+    ${Integration_name}=    Set Variable    Taboola
     FrontOfficeApp.Go to Landing Page
     FrontOfficeApp.Begin Login
     Sleep  20s
