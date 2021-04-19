@@ -15,9 +15,9 @@ Begin Login
     Login.Enter Log In data
 
 Enter to the integration
-    log    ${Integration_name}
+    [arguments]    ${Integration_name}
     IntegrationTest.Verify Page Loaded
-    IntegrationTest.Select integration
+    IntegrationTest.Select integration    ${Integration_name}
     #IntegrationTest.Get number of tables per integration
 Get generic table data
     IntegrationTest.Get total tables statistics and validate
