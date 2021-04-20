@@ -25,7 +25,7 @@ Testing of the Snapchat integration
     FrontOfficeApp.Loop inside logs button
     Sleep  5s
 
-Testing of the G. Ads Test integration
+Testing of the G. Ads integration
     [Documentation]  This is test 2
     [Tags]  test2
     ${Integration_name}=    Set Variable    G. Ads Test
@@ -37,7 +37,7 @@ Testing of the G. Ads Test integration
     FrontOfficeApp.Loop inside logs button
     Sleep  5s
 
-Testing of the Stripe Test integration
+Testing of the Stripe integration
     [Documentation]  This is test 3
     [Tags]  test3
     ${Integration_name}=    Set Variable    Stripe Inte
@@ -49,10 +49,46 @@ Testing of the Stripe Test integration
     FrontOfficeApp.Loop inside logs button
     Sleep  5s
 
-Testing of the BrainTree Test integration
+Testing of the BrainTree integration
     [Documentation]  This is test 4
     [Tags]  test4
     ${Integration_name}=    Set Variable    BrainTree
+    FrontOfficeApp.Go to Landing Page
+    FrontOfficeApp.Begin Login
+    Sleep  20s
+    FrontOfficeApp.Enter to the integration    ${Integration_name}
+    FrontOfficeApp.Get generic table data
+    FrontOfficeApp.Loop inside logs button
+    Sleep  5s
+
+Testing of the Amazon Advertising Test integration
+    [Documentation]  This is test 5
+    [Tags]  test5
+    ${Integration_name}=    Set Variable    Amazon Advertising Test
+    FrontOfficeApp.Go to Landing Page
+    FrontOfficeApp.Begin Login
+    Sleep  20s
+    FrontOfficeApp.Enter to the integration    ${Integration_name}
+    FrontOfficeApp.Get generic table data
+    FrontOfficeApp.Loop inside logs button
+    Sleep  5s
+
+Testing of the S3 Test integration
+    [Documentation]  This is test 6
+    [Tags]  test6
+    ${Integration_name}=    Set Variable    S3 Test
+    FrontOfficeApp.Go to Landing Page
+    FrontOfficeApp.Begin Login
+    Sleep  20s
+    FrontOfficeApp.Enter to the integration    ${Integration_name}
+    FrontOfficeApp.Get generic table data
+    FrontOfficeApp.Loop inside logs button
+    Sleep  5s
+
+Testing of the Linkedin ads integration
+    [Documentation]  This is test 7
+    [Tags]  test7
+    ${Integration_name}=    Set Variable    Linkedin ads
     FrontOfficeApp.Go to Landing Page
     FrontOfficeApp.Begin Login
     Sleep  20s
