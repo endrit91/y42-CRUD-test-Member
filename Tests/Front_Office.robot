@@ -269,7 +269,7 @@ Testing of the File Cloud Test integration
 Testing of the PostrgreSQL integration
     [Documentation]  This is test 22
     [Tags]  test22
-    ${Integration_name}=    Set Variable    PostrgreSQL
+    ${Integration_name}=    Set Variable    PostgreSQL
     FrontOfficeApp.Go to Landing Page
     FrontOfficeApp.Begin Login
     Sleep  20s
