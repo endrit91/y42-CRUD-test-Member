@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72faebbb-95ec-4096-8c70-f67fe6aeb83b" name="Default" comment="add second integrations fixes" />
+    <list default="true" id="72faebbb-95ec-4096-8c70-f67fe6aeb83b" name="Default" comment="add second integrations fixes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/PO/IntegrationTest.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/PO/IntegrationTest.robot" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619108628983</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add second integrations fixes">
+      <created>1619108645089</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1619108645089</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
