@@ -28,6 +28,7 @@ Select integration
 
     #${Count}=    Get Element Count  //div[contains(text(), "INVALID")]
 Get total tables statistics and validate
+    click element  //*[contains(text(), "Structure")]
     ${total_tables}=    Get Element Count  ${log_button_locator}
    # ${number_of_tables}    Should Be True    ${total_tables} == 4
 Enter each logs button
