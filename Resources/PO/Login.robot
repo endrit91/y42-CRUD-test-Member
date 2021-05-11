@@ -14,6 +14,7 @@ Enter Log In data
     Submit
 
 Enter email
+    sleep    5S
     Input Text  id=mat-input-0  maciri2464@wpsavy.com
 
 Enter password

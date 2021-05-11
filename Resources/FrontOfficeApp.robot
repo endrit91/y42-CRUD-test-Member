@@ -1,6 +1,6 @@
 *** Settings ***
 Resource  ./PO/Landing.robot
-Resource  ./PO/IntegrationTest.robot
+Resource  ./PO/IntegrationCRUD.robot
 Resource  ./PO/Login.robot
 
 *** Variables ***
@@ -14,15 +14,12 @@ Go to Landing Page
 Begin Login
     Login.Enter Log In data
 
-Enter to the integration
+Crud test of integrations
     [arguments]    ${Integration_name}
-    IntegrationTest.Verify Page Loaded
-    IntegrationTest.Select integration    ${Integration_name}
-    #IntegrationTest.Get number of tables per integration
-Get generic table data
-    IntegrationTest.Get total tables statistics and validate
-Loop inside logs button
-    IntegrationTest.Enter each logs button
-    #Run Keyword If    "${import_status}" == "invalid"    Custom Keyword From If
+    IntegrationCRUD.Verify Page Loaded
+    IntegrationCRUD.Create integration    ${Integration_name}
+    IntegrationCRUD.Read integration
+    IntegrationCRUD.Update integration
+    IntegrationCRUD.Delete integration
 
 
